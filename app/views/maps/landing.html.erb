@@ -1,0 +1,9 @@
+<%= form_tag index_path do %>
+  <%= label_tag(:jobs, "Job") %>
+  <%= text_field_tag(:jobs, params[:jobs]) %>
+  <%= label_tag(:city, "City") %>
+  <%= text_field_tag(:city, params[:city]) %>
+  <%= label_tag(:state, "State") %>
+  <%= text_field_tag(:state, params[:state]) %>
+  <%= submit_tag("Search") %>
+<% end %>
