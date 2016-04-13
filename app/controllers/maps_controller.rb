@@ -6,6 +6,6 @@ class MapsController < ApplicationController
     @jobs=params[:jobs]
     @state=params[:state]
     @city=params[:city]
-    @map=Map.new.jobsearch(@jobs, @city,@state)
+    @map=Map.new.jobsearch(@jobs, @city, @state)
   end
 end
