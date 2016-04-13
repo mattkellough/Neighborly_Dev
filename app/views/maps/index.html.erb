@@ -1,9 +1,24 @@
+<div id="control">
+  <h2>Find Local Jobs</h2>
+  <p>We'll help you locate your closest employer. Simply choose an option below to begin...</p>
+  <form method="get" id="chooseZip">
+    <button type="submit" class="learnButton">Use current location</button>
+    <button type="button" id="searchZip" class="learnButton">Search by Zip Code</button>
+    <div class="clear"></div>
+    <div class="zipSearch">
+      <input id="textZip" type="text" name="zip" placeholder="enter your zip code" autofocus>
+      <button type="submit" class="learnButton">Search</button>
+    </div>
+    <div class="clear"></div>
+  </form>
+</div>
+
 <div id="map-canvas"></div>
 
 <ul>
-<% @map["resultItemList"].each do |i| %>
-<br>
+  <% @map["resultItemList"].each do |i| %>
+  <br>
 
-<li><%= i["company"]%></li>
-<% end %>
+  <li><%= i["company"]%></li>
+  <% end %>
 </ul>
