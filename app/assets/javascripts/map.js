@@ -1,6 +1,6 @@
 $(function() {
 
-  var center = new google.maps.LatLng(39.5, -98.35)
+  var center = new google.maps.LatLng([39.5], -98.35)
 
   var mapOptions = {
     zoom: 5,
@@ -23,21 +23,10 @@ $(function() {
     radius: 8047,
     types: ['cafe']
   }
-  
-  function callback(results, status) {
-    if(status == google.maps.places/PlacesServiceStatus.OK) {
-      for (var i = 0; i < results.length; i++){
-        createMarker(results[i]);
-      }
-    }
-  }
 
-
-  var service = new google.maps.places.PlacesService(mapOptions);
-
-  service.nearbySearch(request, callback);
-
-  console.log('test');
+  // var service = new google.maps.places.PlacesService(mapOptions);
+  //
+  // service.nearbySearch(request, callback);
 
   // function callback(results, status) {
   //   if(status == google.maps.places/PlacesServiceStatus.OK) {
