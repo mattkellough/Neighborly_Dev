@@ -1,6 +1,6 @@
 $(function() {
 
-  var center = new google.maps.LatLng([39.5], -98.35)
+  var center = new google.maps.LatLng(39.5, -98.35)
 
   var mapOptions = {
     zoom: 5,
