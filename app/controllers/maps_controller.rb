@@ -5,6 +5,6 @@ class MapsController < ApplicationController
   def index
     @jobs=params[:jobs]
     @zip=params[:zip]
-    @maps=Map.new.jobsearch(@jobs, @zip)
+    @map=Map.new.jobsearch(@jobs, @zip)
   end
 end
