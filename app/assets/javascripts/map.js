@@ -1,8 +1,8 @@
 $(function() {
 
   var mapOptions = {
-    zoom: 12,
-    center: new google.maps.LatLng(25.7823072, -80.3011211),
+    zoom: 5,
+    center: new google.maps.LatLng(39.5, -98.35),
     panControl: false,
     panControlOptions: {
       position: google.maps.ControlPosition.BOTTOM_LEFT
