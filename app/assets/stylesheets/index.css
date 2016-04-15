@@ -116,12 +116,12 @@ button:hover {
 }
 
 #logo img {
-  margin-left: 3px;
+  margin-left: -0.4em;
   height: 100%;
   width: 100%;
   float: left;
   clear: left;
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 
 #copyright {
@@ -140,4 +140,9 @@ button:hover {
   float: right;
   bottom: 1.5em;
   right: -1.7em;
+}
+
+form {
+  position: relative;
+  left: -0.5em;
 }
