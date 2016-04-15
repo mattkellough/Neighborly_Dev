@@ -1,6 +1,6 @@
 <div id="control">
   <h2>Find Local Jobs</h2>
-  <p>We'll help you locate your closest employer. Simply choose an option below to begin...</p>
+  <p>Let us help locate you to your closest employer. To begin, input your job title and zip code</p>
   <%= form_tag index_path do %>
     <%= text_field_tag(:jobs, params[:jobs], :placeholder => "JOB TITLE" ) %>
     <br>
@@ -13,9 +13,16 @@
   <% end %>
   <div class="dice">
     <%= link_to image_tag('dice.png'), "http://www.dice.com/" %>
-    <p>POWERED</p>
+    <span>POWERED</span>
+    <br>
+    <!-- <div id="powered">
+      <span>POWERED</span>
+    </div> -->
     <div class="gmaps">
-      <p>BY</p>
+      <!-- <div id="by">
+        <span>BY</span>
+      </div> -->
+      <span>BY</span>
       <%= link_to image_tag('gmaps.png'), "https://www.google.com/maps" %>
     </div>
   </div>

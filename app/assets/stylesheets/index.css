@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 25px;
 }
 
 body {
@@ -15,10 +16,12 @@ body {
 
 input#jobs {
   margin-bottom: 8px;
+  margin-top: 5px;
 }
 
 input#zip {
   margin-bottom: 8px;
+  margin-top: 5px;
 }
 
 button {
@@ -39,8 +42,7 @@ button {
   color: #fff;
   width: 15%;
   padding: 0px 30px 10px 30px;
-  border-right: 1px solid black;
-
+  border-right: 2px solid #47b8e0;
 }
 
 #control input {
@@ -61,23 +63,25 @@ button {
   height: 100.75px;
   width: 100.75px;
   border-radius: 10px;
-  margin-top: 125px;
+  margin-top: 120px;
   float: left;
 }
 
 .gmaps img {
   height: 120.75px;
   width: 120.75px;
-  margin-top: 0px;
   float: right;
+  margin-top: -40px;
 }
 
-.dice p {
+.dice span {
   float: right;
   clear: left;
+  margin-right: 8px;
 }
 
-.gmaps p {
+.gmaps span{
   float: left;
   clear: right;
+  margin-left: 41px;
 }
