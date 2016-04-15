@@ -38,6 +38,7 @@ button {
 }
 
 #control {
+  clear: left;
   float: left;
   color: #fff;
   width: 15%;
@@ -63,7 +64,7 @@ button {
   height: 100.75px;
   width: 100.75px;
   border-radius: 10px;
-  margin-top: 120px;
+  margin-top: 85px;
   float: left;
 }
 
@@ -80,8 +81,28 @@ button {
   margin-right: 8px;
 }
 
+#powered {
+  display: block;
+  position: relative;
+  top: -50px;
+}
+
 .gmaps span{
   float: left;
   clear: right;
   margin-left: 41px;
+}
+
+#logo {
+  height: auto;
+  width: auto;
+}
+
+#logo img {
+  margin-left: 3px;
+  height: 100%;
+  width: 100%;
+  float: left;
+  clear: left;
+  margin-bottom: 30px;
 }
