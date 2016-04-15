@@ -34,12 +34,13 @@ button {
   cursor: pointer;
 }
 
-#control{
+#control {
   float: left;
   color: #fff;
   width: 15%;
-  padding: 50px 30px 10px 30px;
+  padding: 0px 30px 10px 30px;
   border-right: 1px solid black;
+
 }
 
 #control input {
@@ -52,6 +53,31 @@ button {
   border: 1px solid #47b8e0;
 }
 
-p {
+#control p {
   line-height: 20px;
+}
+
+.dice img {
+  height: 100.75px;
+  width: 100.75px;
+  border-radius: 10px;
+  margin-top: 125px;
+  float: left;
+}
+
+.gmaps img {
+  height: 120.75px;
+  width: 120.75px;
+  margin-top: 0px;
+  float: right;
+}
+
+.dice p {
+  float: right;
+  clear: left;
+}
+
+.gmaps p {
+  float: left;
+  clear: right;
 }

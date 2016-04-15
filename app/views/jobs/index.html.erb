@@ -11,9 +11,20 @@
     <%= text_field_tag(:zip, params[:zip], :placeholder => "ZIP CODE") %>
     <%= button_tag("SEARCH") %>
   <% end %>
+  <div class="dice">
+    <%= link_to image_tag('dice.png'), "http://www.dice.com/" %>
+    <p>POWERED</p>
+    <div class="gmaps">
+      <p>BY</p>
+      <%= link_to image_tag('gmaps.png'), "https://www.google.com/maps" %>
+    </div>
+  </div>
 </div>
 
 <div id="map-canvas"></div>
+
+
+</div>
 
 <ul>
   <% @job["resultItemList"].each do |i| %>
@@ -24,5 +35,3 @@
   <li><%= i["detailUrl"]%></li>
   <% end %>
 </ul>
-
-<%= console %>
