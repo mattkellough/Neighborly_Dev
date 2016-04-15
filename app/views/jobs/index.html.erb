@@ -1,16 +1,16 @@
 <div id="control">
   <h2>Find Local Jobs</h2>
   <p>We'll help you locate your closest employer. Simply choose an option below to begin...</p>
-  <form method="get" id="chooseZip">
-    <button type="submit" class="learnButton">USE MY CURRENT LOCATION</button>
-    <button type="button" id="searchZip" class="learnButton">SEARCH BY ZIP CODE</button>
-    <div class="clear"></div>
-    <div class="zipSearch">
-      <input id="textZip" type="text" name="zip" placeholder="ZIP CODE" autofocus>
-      <button type="submit" class="learnButton">SEARCH</button>
-    </div>
-    <div class="clear"></div>
-  </form>
+  <%= form_tag index_path do %>
+    <%= text_field_tag(:jobs, params[:jobs], :placeholder => "JOB TITLE" ) %>
+    <br>
+    <!-- <%= label_tag(:city, "CITY") %>
+    <%= text_field_tag(:city, params[:city]) %>
+    <%= label_tag(:state, "STATE") %>
+    <%= text_field_tag(:state, params[:state]) %> -->
+    <%= text_field_tag(:zip, params[:zip], :placeholder => "ZIP CODE") %>
+    <%= button_tag("SEARCH") %>
+  <% end %>
 </div>
 
 <div id="map-canvas"></div>
@@ -20,6 +20,8 @@
   <br>
 
   <li><%= i["company"]%></li>
+  <li><%= i["jobTitle"]%></li>
+  <li><%= i["detailUrl"]%></li>
   <% end %>
 </ul>
 

@@ -1,72 +1,57 @@
 html, body {
   height: 100%;
-  margin: 0px;
-  padding: 0px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 body {
-	color: #fff;
-	font-size: 15px;
-	background-color: #34314c;
+  color: #fff;
+  font-size: 15px;
+  background-color: #34314c;
 }
 
 #map-canvas {
   height: 100%;
 }
 
+input#jobs {
+  margin-bottom: 8px;
+}
+
+input#zip {
+  margin-bottom: 8px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: #47b8e0;
+  border: 0;
+  color: #fff;
+  height: 37px;
+  line-height: 37px;
+  width: 102%;
+  text-align: center;
+  cursor: pointer;
+}
+
 #control{
-		float: left;
-		color: #fff;
-		width: 15%;
-		padding: 50px 30px 10px 30px;
-		border-right: 1px solid black;
-	}
+  float: left;
+  color: #fff;
+  width: 15%;
+  padding: 50px 30px 10px 30px;
+  border-right: 1px solid black;
+}
 
-	#control input[type=text]{
-    text-align: center;
-    color: #fff;
-		width: 100%;
-		height: 40px;
-		font-size: 24px;
-		background-color: #34314c;
-		border: 1px solid #47b8e0;
-	}
+#control input {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+  background-color: #34314c;
+  border: 1px solid #47b8e0;
+}
 
-	.learnButton {
-		margin-top: 10px;
-		margin-bottom: 20px;
-		background: #47b8e0;
-		border: 0;
-		color: #fff;
-		height: 37px;
-		line-height: 37px;
-		width: 102%;
-		text-align: center;
-		cursor: pointer;
-	}
-
-	#mc_embed_signup{
-	margin-top: 30px;
-	float: left;
-	width: 300px;
-	}
-
-	#mc_embed_signup form label{
-		margin-bottom: 30px;
-		line-height: 20px;
-		clear: right;
-	}
-
-	#mc_embed_signup form input.email{
-		width: 100%;
-		height: 40px;
-		font-size: 24px;
-		background-color: #6B7283;
-		border: 1px solid #47b8e0;
-	}
-
-  p {
-    line-height: 20px;
-  }
+p {
+  line-height: 20px;
 }
