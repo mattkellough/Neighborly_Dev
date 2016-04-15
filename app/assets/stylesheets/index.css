@@ -132,3 +132,12 @@ button:hover {
   float: right;
   right: -2.8em;
 }
+
+#githublogo img {
+  height: 10%;
+  width: 10%;
+  position: relative;
+  float: right;
+  bottom: 1.5em;
+  right: -1.7em;
+}
