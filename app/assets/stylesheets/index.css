@@ -1,4 +1,4 @@
-html, body {
+html, body, input, button {
   height: 100%;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   line-height: 25px;
@@ -14,15 +14,12 @@ body {
   height: 100%;
 }
 
-input#jobs {
+input {
   margin-bottom: 8px;
   margin-top: 5px;
+  border-radius: 5px;
 }
 
-input#zip {
-  margin-bottom: 8px;
-  margin-top: 5px;
-}
 
 button {
   margin-top: 10px;
@@ -35,7 +32,15 @@ button {
   width: 102%;
   text-align: center;
   cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: all 0.3s ease 0s;
 }
+
+button:hover {
+  box-shadow: inset 0 0 0 5px #025F7F;
+}
+
 
 #control {
   clear: left;

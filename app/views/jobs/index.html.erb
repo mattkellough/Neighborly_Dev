@@ -1,7 +1,5 @@
 <div id="control">
   <div id="logo"><%= link_to image_tag('NeighborlyDevLogo.png'), index_path %></div>
-
-  <!-- <p>Let us help locate you to your closest employer. To begin, input your job title and zip code</p> -->
   <%= form_tag index_path do %>
     <%= text_field_tag(:jobs, params[:jobs], :placeholder => "JOB TITLE" ) %>
     <br>
@@ -16,13 +14,7 @@
     <%= link_to image_tag('dice.png'), "http://www.dice.com/" %>
     <span id="powered">POWERED</span>
     <br>
-    <!-- <div id="powered">
-      <span>POWERED</span>
-    </div> -->
     <div class="gmaps">
-      <!-- <div id="by">
-        <span>BY</span>
-      </div> -->
       <span>BY</span>
       <%= link_to image_tag('gmaps.png'), "https://www.google.com/maps" %>
     </div>
