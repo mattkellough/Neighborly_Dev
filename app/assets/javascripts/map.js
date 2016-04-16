@@ -4,6 +4,7 @@ $(function() {
 
   var mapOptions = {
     zoom: 5,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
     center,
     panControl: true,
     panControlOptions: {
@@ -17,6 +18,18 @@ $(function() {
     scaleControl: false
 
   };
+
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+
+  var markerOptions = {
+    position: new google.maps.LatLng(39.5, -98.35)
+  };
+
+  var marker = new google.maps.Marker(markerOptions);
+  marker.setMap(map);
+
+
 
   // var request = {
   //   location: center,
@@ -43,7 +56,5 @@ $(function() {
   //     position: place.geometry.location
   //   });
   // }
-
-  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 });
