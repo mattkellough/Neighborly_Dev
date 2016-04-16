@@ -1,6 +1,6 @@
 == Neighborly Dev
 
-![Screenshot](app/assets/images/screenshot.png)
+![Screenshot](screenshots/screenshot.png "Screenshot")
 
 
 Neighborly Dev is  a web application meant to assist job seekers in the tech sector
