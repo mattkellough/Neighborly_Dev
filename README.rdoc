@@ -1,5 +1,9 @@
 == Neighborly Dev
 
-Neighborly Dev is  a web application meant to assist job seekers in the tech sector find  locally available positions by populating a map with markers given the params inserted by the user. <br />
+![Screenshot](/assets/images/screenshot.png)
+
+
+Neighborly Dev is  a web application meant to assist job seekers in the tech sector
+find  locally available positions by populating a map with markers given the params inserted by the user. <br />
 
 Using Dice Jobs API and Google Maps Javascript API to accomplish this.
