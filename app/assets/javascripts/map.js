@@ -29,6 +29,17 @@ $(function() {
   var marker = new google.maps.Marker(markerOptions);
   marker.setMap(map);
 
+  var infoWindowOptions = {
+    content: 'Testing!'
+  };
+
+  var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
+  google.maps.event.addListener(marker,'click',function(e){
+
+    infoWindow.open(map, marker);
+
+  });
+
 
 
   // var request = {
