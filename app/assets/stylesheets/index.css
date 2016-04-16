@@ -17,11 +17,6 @@ body {
   margin: 0;
 }
 
-input {
-  margin-bottom: 8px;
-  margin-top: 5px;
-  border-radius: 5px;
-}
 
 
 button {
@@ -62,6 +57,9 @@ button:hover {
   font-size: 24px;
   background-color: #34314c;
   border: 1px solid #47b8e0;
+  margin-bottom: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 
 #control p {
@@ -152,4 +150,13 @@ form {
 
 div.gm-style-iw {
   color: #34314c;
+}
+
+input#autocomplete {
+  position: absolute;
+  height: 2em;
+  width: 67em;
+  z-index: 4;
+  top: 1.5em;
+  right: 11em;
 }
