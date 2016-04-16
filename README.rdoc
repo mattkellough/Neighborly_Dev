@@ -1,28 +1,5 @@
-== README
+== Neighborly Dev
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Neighborly Dev is  a web application meant to assist job seekers in the tech sector find  locally available positions by populating a map with markers given the params inserted by the user. <br />
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Using Dice Jobs API and Google Maps Javascript API to accomplish this.
