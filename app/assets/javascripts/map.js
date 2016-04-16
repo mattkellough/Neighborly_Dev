@@ -41,7 +41,10 @@ $(document).ready(function(){
       map.setZoom(17);
     }
     marker.setPosition(place.geometry.location);
-    infoWindow.setContent('<div><strong>' + place.name + '</strong><br>');
+    infoWindow.setContent('<div><strong>' + place.name + '</strong><br>'
+      + '<div><strong>' + place.formatted_address + '</strong><br>'
+      + '<div><strong>' + place.website + '</strong><br>'
+      + '<div><strong>' + place.formatted_phone_number + '</strong><br>');
     infoWindow.open(map, marker);
     google.maps.event.addListener(marker,'click', function(e){
 

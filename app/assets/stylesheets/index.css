@@ -41,6 +41,7 @@ button:hover {
 
 
 #control {
+  height: 98.5%;
   clear: left;
   float: left;
   color: #fff;
