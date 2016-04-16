@@ -2,6 +2,8 @@ html, body, input, button {
   height: 100%;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   line-height: 25px;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -69,10 +71,10 @@ button:hover {
   height: 3em;
   width: 3em;
   border-radius: 10px;
-  margin-top: 13.45em;
+  margin-top: 13.8em;
   float: left;
   clear: left;
-  margin-left: -2em;
+  margin-left: -1.8em;
 }
 
 .gmaps img {
