@@ -5,4 +5,4 @@ find  locally available positions by populating a map with markers given the par
 
 Using Dice Jobs API and Google Maps Javascript API to accomplish this.
 
-![alt text](screenshots/screenshot.png "SCREESHOT")
+![screen shot](https://cloud.githubusercontent.com/assets/16296640/14584906/6fd055de-042c-11e6-998f-9d786f95c318.png)
