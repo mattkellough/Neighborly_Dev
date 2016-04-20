@@ -27,8 +27,8 @@ find locally available positions. <br />
 
 *** Matt Kellough **
 
-*<http://www.kellough.co>
-*<https://github.com/mattkellough>
+* <http://www.kellough.co>
+* <https://github.com/mattkellough>
 
 
 [Ruby on Rails]: <http://rubyonrails.org/>
