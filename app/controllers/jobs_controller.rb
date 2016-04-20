@@ -17,8 +17,7 @@ class JobsController < ApplicationController
       @arr.each do |i|
         @new=Job.create(company: i["company"], title: i["jobTitle"], url: i["detailUrl"])
       end
-
-
+      
   end
 
 end

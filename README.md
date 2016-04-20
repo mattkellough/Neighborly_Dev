@@ -1,7 +1,7 @@
 # Neighborly Dev
 
-Neighborly Dev is  a web application meant to assist job seekers in the tech sector
-find  locally available positions by populating a map with markers given the params inserted by the user. <br />
+Neighborly Dev is a web application meant to assist job seekers in the tech sector
+find locally available positions. <br />
 
 
 ![screen shot](https://cloud.githubusercontent.com/assets/16296640/14584906/6fd055de-042c-11e6-998f-9d786f95c318.png)
@@ -22,6 +22,13 @@ find  locally available positions by populating a map with markers given the par
  - Write Tests
  - Add Code Comments
  - Add Another Job Search API
+
+### Creator
+
+*** Matt Kellough **
+
+*<http://www.kellough.co>
+*<https://github.com/mattkellough>
 
 
 [Ruby on Rails]: <http://rubyonrails.org/>
