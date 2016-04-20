@@ -9,7 +9,7 @@ find locally available positions. <br />
 
 ### Description
 
-Once a user enters in the parameters (job title & zip code), the app will query the Dice job search API returning open positions in the area. Once received, the business name is reverse geocoded by a geocoder gem, and returns the necessary latitude and longitude coordinates. This is then passed into the Google Maps API which will populate a map with markers representing locally available positions.  
+Once a user enters in the parameters (job title & zip code), the app will query the Dice job search API returning open positions in the area. Once received, the business name is reverse geocoded by a geocoder gem, and returns the necessary latitude and longitude coordinates. This is then passed into the Google Maps API, which will populate a map with markers representing locally available positions.  
 
 
 ### Version
@@ -30,9 +30,13 @@ Once a user enters in the parameters (job title & zip code), the app will query 
  - Add Code Comments
  - Add Another Job Search API
 
+### License
+LICENSED UNDER THE MIT LICENSE
+
+
 ### Creator
 
-*** Matt Kellough ***
+** Matt Kellough **
 
 * <http://www.kellough.co>
 * <https://github.com/mattkellough>
