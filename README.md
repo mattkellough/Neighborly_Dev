@@ -31,12 +31,11 @@ Once a user enters in the parameters (job title & zip code), the app will query 
  - Add Another Job Search API
 
 ### License
-LICENSED UNDER THE MIT LICENSE
-
+Licensed under the MIT License
 
 ### Creator
 
-** Matt Kellough **
+**Matt Kellough**
 
 * <http://www.kellough.co>
 * <https://github.com/mattkellough>
