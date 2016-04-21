@@ -1,11 +1,13 @@
 $(document).ready(function(){
 
-  console.log(points)
+
+  var coordinates = points;
+
+  for (var i=0,  total=coordinates.length; i < total; i++) {
+  console.log(coordinates[i]);
+  }
 
 
-
-  var lat = 35.7795369
-  var lng = -78.6465072
 
   var mapOptions = {
     zoom: 5,
@@ -60,7 +62,7 @@ $(document).ready(function(){
   });
 
   var markerOptions = {
-    position: new google.maps.LatLng(lat, lng)
+    position: new google.maps.LatLng(coordinates)
   };
 
   var marker = new google.maps.Marker(markerOptions);

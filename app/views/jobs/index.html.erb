@@ -33,6 +33,7 @@
   <% Job.all.each do |job| %>
     points.push([<%= job.latitude %>, <%= job.longitude %>]);
   <% end %>
+
 </script>
 
 <div id="map-canvas"></div>
