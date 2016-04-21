@@ -25,10 +25,10 @@ Once a user enters in the parameters (job title & zip code), the app will query 
 
 ### Todos
 
- - Add AJAX
- - Write Tests
- - Add Code Comments
- - Add Another Job Search API
+- Add AJAX
+- Write Tests
+- Add Code Comments
+- Add Another Job Search API
 
 ### License
 Licensed under the MIT License

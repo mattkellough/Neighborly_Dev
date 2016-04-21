@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+  console.log(points)
+
+
+
+  var lat = 35.7795369
+  var lng = -78.6465072
 
   var mapOptions = {
     zoom: 5,
@@ -53,12 +59,12 @@ $(document).ready(function(){
     });
   });
 
-  // var markerOptions = {
-  //   position: new google.maps.LatLng(39.5, -98.35)
-  // };
-  //
-  // var marker = new google.maps.Marker(markerOptions);
-  // marker.setMap(map);
+  var markerOptions = {
+    position: new google.maps.LatLng(lat, lng)
+  };
+
+  var marker = new google.maps.Marker(markerOptions);
+  marker.setMap(map);
   //
   // var infoWindowOptions = {
   //   content: 'Testing!'

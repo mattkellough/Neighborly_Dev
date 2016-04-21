@@ -4,6 +4,9 @@ class Job < ActiveRecord::Base
     HTTParty.get("http://service.dice.com/api/rest/jobsearch/v1/simple.json?text=#{jobs}&city=#{zip}")
   end
 
+  def index
+  end
+
   geocoded_by :company
   after_validation :geocode
 

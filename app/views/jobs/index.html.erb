@@ -26,6 +26,15 @@
 </div>
 
 <input type="text" id="autocomplete">
+
+<script>
+  var points = [];
+
+  <% Job.all.each do |job| %>
+    points.push([<%= job.latitude %>, <%= job.longitude %>]);
+  <% end %>
+</script>
+
 <div id="map-canvas"></div>
 
 
