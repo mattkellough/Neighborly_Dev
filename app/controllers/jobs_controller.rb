@@ -13,8 +13,6 @@ class JobsController < ApplicationController
       @zip=params[:zip]
       @job=Job.new.jobsearch(@jobtitle, @zip)
       @arr=@job["resultItemList"]
-      @latitude=params[:latitude]
-      @longitude=params[:longitude]
 
       @arr.each do |i|
         @new=Job.create(company: i["company"], title: i["jobTitle"], url: i["detailUrl"])

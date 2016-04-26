@@ -1,11 +1,12 @@
 $(document).ready(function(){
 
 
-  var coordinates = points;
+  var coordinates = points
 
   for (var i=0,  total=coordinates.length; i < total; i++) {
-  console.log(coordinates[i]);
+    console.log(coordinates[i][0], coordinates[i][1]);
   }
+
 
 
 
@@ -50,9 +51,9 @@ $(document).ready(function(){
     }
     marker.setPosition(place.geometry.location);
     infoWindow.setContent('<div><strong>' + place.name + '</strong><br>'
-      + '<div><strong>' + place.formatted_address + '</strong><br>'
-      + '<div><strong>' + place.website + '</strong><br>'
-      + '<div><strong>' + place.formatted_phone_number + '</strong><br>');
+    + '<div><strong>' + place.formatted_address + '</strong><br>'
+    + '<div><strong>' + place.website + '</strong><br>'
+    + '<div><strong>' + place.formatted_phone_number + '</strong><br>');
     infoWindow.open(map, marker);
     google.maps.event.addListener(marker,'click', function(e){
 
@@ -61,12 +62,18 @@ $(document).ready(function(){
     });
   });
 
-  var markerOptions = {
-    position: new google.maps.LatLng(coordinates)
+  for (var i=0,  total=coordinates.length; i < total; i++) {
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(coordinates[i][0], coordinates[i][1]),
+      map: map
+    });
   };
-
-  var marker = new google.maps.Marker(markerOptions);
-  marker.setMap(map);
+  // var markerOptions = {
+  //   position: new google.maps.LatLng(35.7795369, -78.6465072)
+  // };
+  //
+  // var marker = new google.maps.Marker(markerOptions);
+  // marker.setMap(map);
   //
   // var infoWindowOptions = {
   //   content: 'Testing!'
