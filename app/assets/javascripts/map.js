@@ -3,12 +3,6 @@ $(document).ready(function(){
 
   var coordinates = points
 
-  for (var i=0,  total=coordinates.length; i < total; i++) {
-    console.log(coordinates[i][0], coordinates[i][1]);
-  }
-
-
-
 
   var mapOptions = {
     zoom: 5,
@@ -67,23 +61,18 @@ $(document).ready(function(){
       position: new google.maps.LatLng(coordinates[i][0], coordinates[i][1]),
       map: map
     });
+    var infoWindowOptions = {
+      content: 'Job Posting'
+    };
+
+    var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
+    google.maps.event.addListener(marker,'click',function(e){
+
+      infoWindow.open(map, marker);
+
+    });
+    console.log(coordinates[i][0], coordinates[i][1]);
   };
-  // var markerOptions = {
-  //   position: new google.maps.LatLng(35.7795369, -78.6465072)
-  // };
-  //
-  // var marker = new google.maps.Marker(markerOptions);
-  // marker.setMap(map);
-  //
-  // var infoWindowOptions = {
-  //   content: 'Testing!'
-  // };
-  //
-  // var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
-  // google.maps.event.addListener(marker,'click',function(e){
-  //
-  //   infoWindow.open(map, marker);
-  //
-  // });
+
 
 });
